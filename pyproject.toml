@@ -9,10 +9,10 @@ description = "Transform openapi.json into openapi.yaml with camelCased operatio
 authors = ["Albert Shaidullin <3litac@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "openapi_camel_caser"}]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
+pyyaml = "^6.0.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.10.0"
@@ -21,6 +21,7 @@ flake8 = "^6.1.0"
 mypy = "^1.6.1"
 pre-commit = "^3.5.0"
 pytest = "^7.4.2"
+types-pyyaml = "^6.0.12.12"
 
 [tool.black]
 skip-string-normalization = true
